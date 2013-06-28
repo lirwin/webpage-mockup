@@ -1,0 +1,84 @@
+ul.topnav {
+	list-style: none;
+	padding: 0;	
+	margin: 0;
+	float: left;
+	width: 100%;
+	font-size: 1.1em;
+}
+ul.topnav li {
+	float: left;
+	margin-right: 3px;	
+	position: relative; /*--Declare X and Y axis base for sub navigation--*/
+}
+ul.topnav li a{
+	padding: 10px 18px 10px 10px;
+	color: #000;
+	display: block;
+	text-decoration: none;
+	float: left;
+	border: 0;
+}
+ul.topnav li.subnav a {
+	background: url(../img/grey-down-arrow.jpg) no-repeat right center;	
+	
+}
+ul.topnav li a:hover{
+	background: #507AA5;
+	cursor: pointer;
+	color: #FFF;
+	border-radius: 5px;
+	box-shadow: 3px 3px 2px #555;
+}
+ul.topnav li.subnav a:hover {
+	background: #507AA5 url(../img/blue-down-arrow.jpg) no-repeat right center; 
+		
+}
+ul.topnav li.subnav a.highlight {
+	background: #507AA5 url(../img/blue-down-arrow.jpg) no-repeat right center; 
+	color: #FFF;
+	border-radius: 5px;
+	box-shadow: 3px 3px 2px #555;
+}
+ul.topnav li.subnav ul {
+	list-style: none;
+	position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+	left: 0; 
+	top: 31px;
+	background: #507AA5;
+	color: #FFF;
+	font-size: 1em;
+	margin: 0; padding: 0;
+	display: none;
+	float: left;
+	width: 185px;
+	border-radius: 0 5px 5px;
+	box-shadow: 3px 3px 2px #555;
+}
+ul.topnav li.subnav ul li{
+	margin: 0; padding: 0;
+	clear: both;
+	width: 185px;
+}
+ul.topnav li.subnav ul li:first-child a, ul.topnav li.subnav ul li:last-child a{
+	border-radius: 5px;
+}
+ul.topnav li.subnav ul li a {
+	color: #FFF;
+	background: #507AA5;
+	float: left;
+	width: 156px;
+	padding: 8px 20px 8px 10px;
+}
+ul.topnav li.subnav ul li a:hover { /*--Hover effect for subnav links--*/
+	background: #466A90 url(../img/blue-right-arrow.jpg) no-repeat right center; 
+	box-shadow: none;
+}
+ul.topnav li.subnav ul li:first-child a:hover {
+ 	border-top-left-radius: 5px;
+ 	border-top-right-radius: 5px;
+ }
+ul.topnav li.subnav ul li:last-child a:hover {
+ 	border-bottom-left-radius: 5px;
+ 	border-bottom-right-radius: 5px;
+ }
